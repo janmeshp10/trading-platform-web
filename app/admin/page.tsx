@@ -107,7 +107,7 @@ export default function AdminPage() {
                 ))}
                 {subs.length === 0 && (
                   <tr>
-                    <td colSpan={8} className="p-6 text-center text-gray-500">
+                    <td colSpan={8} className="p-6 text-center text-slate-400">
                       No subscriptions yet.
                     </td>
                   </tr>

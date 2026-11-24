@@ -73,7 +73,7 @@ export default function MyPlanPage() {
             <p className="text-gray-400 mb-4">You don&apos;t have an active indicator subscription yet.</p>
             <Link
               href="/subscribe"
-              className="px-5 py-2.5 bg-orange-600 hover:bg-orange-500 rounded-lg font-medium"
+              className="px-5 py-2.5 bg-orange-600 hover:bg-amber-600 rounded-lg font-medium"
             >
               View Plans
             </Link>

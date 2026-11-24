@@ -147,7 +147,7 @@ export default function SubscribePage() {
               <button
                 onClick={() => handleCheckout(plan.id)}
                 disabled={loadingPlan === plan.id}
-                className="w-full py-2.5 px-4 rounded-lg bg-orange-600 hover:bg-orange-500 font-medium disabled:opacity-50"
+                className="w-full py-2.5 px-4 rounded-lg bg-orange-600 hover:bg-amber-600 font-medium disabled:opacity-50"
               >
                 {loadingPlan === plan.id ? 'Opening Razorpay...' : 'Pay with Razorpay'}
               </button>
