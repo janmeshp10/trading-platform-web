@@ -21,10 +21,10 @@ export function Login({ mode = 'signin' }: { mode?: 'signin' | 'signup' }) {
   );
 
   return (
-    <div className="min-h-[100dvh] flex flex-col justify-center py-12 px-4 sm:px-6 lg:px-8 bg-slate-950">
+    <div className="min-h-[100dvh] flex flex-col justify-center py-12 px-4 sm:px-6 lg:px-8 bg-[#060b14]">
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         <div className="flex justify-center">
-          <CircleIcon className="h-12 w-12 text-amber-400" />
+          <CircleIcon className="h-12 w-12 text-orange-500" />
         </div>
         <h2 className="mt-6 text-center text-3xl font-extrabold text-white">
           {mode === 'signin'
@@ -115,7 +115,7 @@ export function Login({ mode = 'signin' }: { mode?: 'signin' | 'signup' }) {
               <div className="w-full border-t border-slate-700" />
             </div>
             <div className="relative flex justify-center text-sm">
-              <span className="px-2 bg-slate-950 text-slate-400">
+              <span className="px-2 bg-[#060b14] text-slate-400">
                 {mode === 'signin'
                   ? 'New to our platform?'
                   : 'Already have an account?'}
@@ -128,7 +128,7 @@ export function Login({ mode = 'signin' }: { mode?: 'signin' | 'signup' }) {
               href={`${mode === 'signin' ? '/sign-up' : '/sign-in'}${
                 redirect ? `?redirect=${redirect}` : ''
               }${priceId ? `&priceId=${priceId}` : ''}`}
-              className="w-full flex justify-center py-2 px-4 border border-slate-700 rounded-full shadow-sm text-sm font-medium text-slate-200 bg-slate-900 hover:bg-slate-950 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
+              className="w-full flex justify-center py-2 px-4 border border-slate-700 rounded-full shadow-sm text-sm font-medium text-slate-200 bg-[#0f172a] hover:bg-[#060b14] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
             >
               {mode === 'signin'
                 ? 'Create an account'

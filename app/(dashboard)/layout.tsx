@@ -39,11 +39,11 @@ function UserMenu() {
           Pricing
         </Link>
           <nav className="flex flex-wrap items-center gap-5 text-sm font-medium text-slate-300">
-            <Link href="/dashboard" className="hover:text-amber-400">Dashboard</Link>
-            <Link href="/backtest" className="hover:text-amber-400">Strategy Backtester</Link>
-            <Link href="/my-plan" className="hover:text-amber-400">My Plan</Link>
-            <Link href="/subscribe" className="hover:text-amber-400">Subscribe Plans</Link>
-            <Link href="/admin" className="hover:text-amber-400">Admin Panel</Link>
+            <Link href="/dashboard" className="hover:text-orange-500">Dashboard</Link>
+            <Link href="/backtest" className="hover:text-orange-500">Strategy Backtester</Link>
+            <Link href="/my-plan" className="hover:text-orange-500">My Plan</Link>
+            <Link href="/subscribe" className="hover:text-orange-500">Subscribe Plans</Link>
+            <Link href="/admin" className="hover:text-orange-500">Admin Panel</Link>
           </nav>
         <Button asChild className="rounded-full">
           <Link href="/sign-up">Sign Up</Link>
@@ -90,7 +90,7 @@ function Header() {
     <header className="border-b border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
         <Link href="/" className="flex items-center">
-          <CircleIcon className="h-6 w-6 text-amber-400" />
+          <CircleIcon className="h-6 w-6 text-orange-500" />
           <span className="ml-2 text-xl font-semibold text-white">Quant Edge</span>
         </Link>
         <div className="flex items-center space-x-4">

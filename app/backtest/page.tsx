@@ -228,7 +228,7 @@ export default function BacktestPage() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full py-2.5 px-4 rounded-lg bg-orange-600 hover:bg-amber-600 font-medium text-sm disabled:opacity-50"
+              className="w-full py-2.5 px-4 rounded-lg bg-orange-600 hover:bg-orange-500 font-medium text-sm disabled:opacity-50"
             >
               {loading ? 'Running Backtest...' : 'Run Backtest'}
             </button>

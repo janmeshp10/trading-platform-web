@@ -28,7 +28,7 @@ export default function DashboardLayout({
   return (
     <div className="flex flex-col min-h-[calc(100dvh-68px)] max-w-7xl mx-auto w-full">
       {/* Mobile header */}
-      <div className="lg:hidden flex items-center justify-between bg-slate-900 border-b border-slate-800 p-4">
+      <div className="lg:hidden flex items-center justify-between bg-[#0f172a] border-b border-slate-800 p-4">
         <div className="flex items-center">
           <span className="font-medium">Settings</span>
         </div>
@@ -45,7 +45,7 @@ export default function DashboardLayout({
       <div className="flex flex-1 overflow-hidden h-full">
         {/* Sidebar */}
         <aside
-          className={`w-64 bg-slate-900 lg:bg-slate-950 border-r border-slate-800 lg:block ${
+          className={`w-64 bg-[#0f172a] lg:bg-[#060b14] border-r border-slate-800 lg:block ${
             isSidebarOpen ? 'block' : 'hidden'
           } lg:relative absolute inset-y-0 left-0 z-40 transform transition-transform duration-300 ease-in-out lg:translate-x-0 ${
             isSidebarOpen ? 'translate-x-0' : '-translate-x-full'
@@ -55,8 +55,8 @@ export default function DashboardLayout({
             {navItems.map((item) => (
               <Link key={item.href} href={item.href} passHref>
                 <Button
-                  variant={pathname === item.href ? 'secondary' : 'ghost'}
-                  className={`shadow-none my-1 w-full justify-start ${
+                  variant="ghost"
+                  className={`shadow-none my-1 w-full justify-start text-slate-200 hover:text-white hover:bg-slate-800 ${
                     pathname === item.href ? 'bg-slate-800' : ''
                   }`}
                   onClick={() => setIsSidebarOpen(false)}

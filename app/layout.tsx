@@ -23,9 +23,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`bg-slate-900 dark:bg-gray-950 text-slate-100 dark:text-white ${manrope.className}`}
+      className={`bg-[#0f172a] dark:bg-gray-950 text-slate-100 dark:text-white ${manrope.className}`}
     >
-      <body className="min-h-[100dvh] bg-slate-950">
+      <body className="min-h-[100dvh] bg-[#060b14]">
         <SWRConfig
           value={{
             fallback: {
