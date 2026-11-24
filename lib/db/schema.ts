@@ -140,3 +140,25 @@ export enum ActivityType {
   INVITE_TEAM_MEMBER = 'INVITE_TEAM_MEMBER',
   ACCEPT_INVITATION = 'ACCEPT_INVITATION',
 }
+
+
+export const indicatorSubscriptions = pgTable('indicator_subscriptions', {
+  id: serial('id').primaryKey(),
+  userId: integer('user_id')
+    .notNull()
+    .references(() => users.id),
+  tradingviewUsername: varchar('tradingview_username', { length: 100 }).notNull(),
+  planName: varchar('plan_name', { length: 50 }).notNull(),
+  amountInr: integer('amount_inr').notNull(),
+  razorpayOrderId: text('razorpay_order_id').unique(),
+  razorpayPaymentId: text('razorpay_payment_id').unique(),
+  paymentStatus: varchar('payment_status', { length: 20 }).notNull().default('pending'),
+  accessStatus: varchar('access_status', { length: 20 }).notNull().default('pending_access'),
+  startsAt: timestamp('starts_at'),
+  expiresAt: timestamp('expires_at'),
+  createdAt: timestamp('created_at').notNull().defaultNow(),
+  updatedAt: timestamp('updated_at').notNull().defaultNow(),
+});
+
+export type IndicatorSubscription = typeof indicatorSubscriptions.$inferSelect;
+export type NewIndicatorSubscription = typeof indicatorSubscriptions.$inferInsert;
