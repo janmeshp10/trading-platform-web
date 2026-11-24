@@ -18,7 +18,11 @@ export default function DashboardLayout({
     { href: '/dashboard', icon: Users, label: 'Team' },
     { href: '/dashboard/general', icon: Settings, label: 'General' },
     { href: '/dashboard/activity', icon: Activity, label: 'Activity' },
-    { href: '/dashboard/security', icon: Shield, label: 'Security' }
+    { href: '/dashboard/security', icon: Shield, label: 'Security' },
+    { href: '/backtest', icon: Activity, label: 'Strategy Backtester' },
+    { href: '/my-plan', icon: Shield, label: 'My Plan' },
+    { href: '/subscribe', icon: Settings, label: 'Subscribe Plans' },
+    { href: '/admin', icon: Users, label: 'Admin Panel' }
   ];
 
   return (

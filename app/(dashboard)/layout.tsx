@@ -38,6 +38,13 @@ function UserMenu() {
         >
           Pricing
         </Link>
+          <nav className="flex flex-wrap items-center gap-5 text-sm font-medium text-gray-700">
+            <Link href="/dashboard" className="hover:text-orange-600">Dashboard</Link>
+            <Link href="/backtest" className="hover:text-orange-600">Strategy Backtester</Link>
+            <Link href="/my-plan" className="hover:text-orange-600">My Plan</Link>
+            <Link href="/subscribe" className="hover:text-orange-600">Subscribe Plans</Link>
+            <Link href="/admin" className="hover:text-orange-600">Admin Panel</Link>
+          </nav>
         <Button asChild className="rounded-full">
           <Link href="/sign-up">Sign Up</Link>
         </Button>
