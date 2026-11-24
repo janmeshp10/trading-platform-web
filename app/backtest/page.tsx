@@ -180,10 +180,10 @@ export default function BacktestPage() {
                   onChange={(e) => setSelectedStrategyId(Number(e.target.value))}
                   className="w-full px-3 py-2 rounded-lg bg-gray-800 border border-gray-700 text-sm"
                 >
-                  {strategies.length === 0 && <option value="">No strategies yet — add one left</option>}
+                  {strategies.length === 0 && <option value="">No strategies yet - add one left</option>}
                   {strategies.map((s) => (
                     <option key={s.id} value={s.id}>
-                      #{s.id} — {s.name} ({s.strategy_type})
+                      #{s.id} - {s.name} ({s.strategy_type})
                     </option>
                   ))}
                 </select>
@@ -238,7 +238,7 @@ export default function BacktestPage() {
         {/* Results */}
         {result && (
           <div className="bg-gray-900 border border-gray-800 rounded-xl p-6">
-            <h2 className="text-xl font-bold mb-4">Backtest Results — {result.symbol}</h2>
+            <h2 className="text-xl font-bold mb-4">Backtest Results - {result.symbol}</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <div className="p-4 bg-gray-800 rounded-lg">
                 <div className="text-xs text-gray-400">Final Capital</div>

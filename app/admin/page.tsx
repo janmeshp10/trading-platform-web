@@ -49,7 +49,7 @@ export default function AdminPage() {
     <div className="min-h-screen bg-gray-950 text-white py-10 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="flex justify-between items-center mb-8">
-          <h1 className="text-2xl font-bold">Admin — TradingView Access Management</h1>
+          <h1 className="text-2xl font-bold">Admin - TradingView Access Management</h1>
           <Link href="/subscribe" className="text-orange-400 hover:underline text-sm">
             ← Back to Pricing
           </Link>

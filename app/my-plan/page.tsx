@@ -86,7 +86,7 @@ export default function MyPlanPage() {
                 className="p-6 bg-gray-900 border border-gray-800 rounded-xl flex flex-col md:flex-row md:items-center md:justify-between gap-4"
               >
                 <div>
-                  <h2 className="text-lg font-semibold">{s.planName} — ₹{s.amountInr}</h2>
+                  <h2 className="text-lg font-semibold">{s.planName} - ₹{s.amountInr}</h2>
                   <p className="text-sm text-gray-400 mt-1">
                     TradingView Username:{' '}
                     <span className="font-mono text-orange-300">{s.tradingviewUsername}</span>

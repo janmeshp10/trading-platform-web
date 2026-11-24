@@ -5,7 +5,7 @@ import { getUser, getTeamForUser } from '@/lib/db/queries';
 import { SWRConfig } from 'swr';
 
 export const metadata: Metadata = {
-  title: 'Quant Edge — Algorithmic Trading Platform',
+  title: 'Quant Edge - Algorithmic Trading Platform',
   description: 'Get started quickly with Next.js, Postgres, and Stripe.'
 };
 
